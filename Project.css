@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@400;600&family=Montserrat:ital,wght@0,900;1,900&family=Oswald:wght@700&family=Roboto:ital,wght@1,100&family=Yeseva+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #141925;
+}
+.nav {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.home {
+  padding: 30px 0px 0px 35px;
+  transition: all 0.2s ease;
+}
+.home:hover {
+  opacity: 0.8;
+}
+.home:active {
+  opacity: 0.45;
+}
+.home img {
+  width: 15px;
+  transform: rotate(90deg);
+}
+.home button {
+  font: 800 13px Inter;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  color: #EDE7D1;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 200px 20px 0px 0px;
+}
+.outer-circle {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid #695732;
+}
+.inner-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-circle p {
+  font: 500 15px Inter;
+  color: #695732;
+}
+#selected {
+  border: 3px solid #F7D3AE;
+}
+#selected p {
+  font: 600 15px Inter;
+  color: #F7D3AE;
+}
+.project-images {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.title {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  font: 900 21px Inter;
+  color: #F7D3AE;
+}
+.title h3 {
+  font: 800 16px Inter;
+  color: #F7D3AE;
+  opacity: 0.25;
+}
+.images {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horizontal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px 0px 30px ;
+}
+.image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.line-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.left-line {
+  height: 3px;
+  width: 110px;
+  background: linear-gradient(to left, #F7D3AE, #695732, rgba(0, 0, 0, 0.0));
+}
+.text p {
+  font: 500 10px Inter;
+  color: beige;
+}
+.right-line {
+  height: 3px;
+  width: 110px;
+  background: linear-gradient(to right, #F7D3AE, #695732, rgba(0, 0, 0, 0.0));
+}
+.image img {
+  width: 285px;
+  object-fit: cover;
+  border: 3px solid #2D2D2D;
+}
+.contents {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.outer-border {
+  height: 100%;
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to top, transparent, #695732, #695732, #695732, #F7D3AE, #695732, #695732, #695732, transparent) 1;
+}
+.inner-border {
+  height: 100%;
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid transparent;
+  border-image: linear-gradient(to top, transparent, #695732, #695732, #695732, #F7D3AE, #695732, #695732, #695732, transparent) 1;
+}
+.description {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.year p {
+  font: 500 9px Inter;
+  color: #F4DFC8;
+}
+.description-image img {
+  width: 90px;
+}
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.subject h1 {
+  font: 700 19px Inter;
+  color: #F4DFC8;
+}
+.subject h3 {
+  font: 700 13px Inter;
+  color: #F4DFC8;
+  opacity: 0.25;
+}
+.vr-line {
+  height: 1%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  height: 2px;
+  width: 300px;
+  background: linear-gradient(to right, transparent, #39364B, #39364B, transparent);
+}
+.tools-used {
+  height: 24%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.diamond-container {
+  height: 100%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.diamond {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2D2D2D;
+  transform: rotate(45deg);
+}
+.diamond img {
+  transform: rotate(315deg);
+}
+#indiv img {
+  width: 60px;
+}
+#html img {
+  width: 39px;
+}
+#css img {
+  width: 32px;
+}
+#vscode img {
+  width: 32px;
+}
+.diamond-text p {
+  color: beige;
+  font: 500 9px Inter;
+}
+.role-line {
+  height: 1%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.line-left {
+  height: 3px;
+  width: 125px;
+  background: linear-gradient(to left, #39364B, #39364B, transparent);
+}
+.role-text p {
+  font: 500 9.5px Inter;
+  color: beige;
+  opacity: 0.35;
+}
+.line-right {
+  height: 3px;
+  width: 125px;
+  background: linear-gradient(to right,#39364B, #39364B, transparent);
+}
+.roles {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#analyst img {
+  width: 30px;
+}
+#lead img,
+#assistant img {
+  width: 35px;
+}
+#programmer img {
+  width: 35px;
+}
+#designer img {
+  width: 35px;
+}
+#assistant p,
+#designer p {
+  font: 500 8.25px Inter;
+}
+.type {
+  height: 24%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#project-one-flow img {
+  width: 218px;
+  object-fit: cover;
+}
+.type-image img {
+  width: 290px;
+  object-fit: cover;
+}

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@400;600&family=Montserrat:ital,wght@0,900;1,900&family=Oswald:wght@700&family=Roboto:ital,wght@1,100&family=Yeseva+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: 0.25px;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #141925;
+  overflow: hidden;
+}
+/* BACK */
+.back {
+  height: 100%;
+  width: 7%;
+}
+.home {
+  padding: 30px 0px 0px 35px;
+  transition: all 0.2s ease;
+}
+.home:hover {
+  opacity: 0.8;
+}
+.home:active {
+  opacity: 0.45;
+}
+.home img {
+  width: 15px;
+  transform: rotate(90deg);
+  z-index: 100;
+}
+.home button {
+  font: 800 13px Inter;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  color: #EDE7D1;
+}
+/* PROFILE */
+.profile {
+  height: 100%;
+  width: 18%;
+}
+.profile-image {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flag {
+  height: 92%;
+  width: 73%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-top: none;
+  border-image: linear-gradient(to top, #695732, #F7D3AE, #695732) 1;
+  background: linear-gradient(to top, #462C11, #A48A70, #462C11);
+}
+.banner {
+  height: 120px;
+  width: 120px;
+  flex-shrink: 0;
+}
+.outer-circle {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background: linear-gradient(#A48A70, #A48A70) padding-box,
+              linear-gradient(to top, #695732, #695732, #F7D3AE) border-box;
+}
+.inner-circle {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid transparent;
+  background: linear-gradient(to top, #A48A70, #A48A70) padding-box,
+              linear-gradient(to top, #695732, #695732, #F7D3AE) border-box;
+}
+.my-image {
+  height: 102px;
+  width: 102px;
+}
+.my-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  transition: 0.4s;
+}
+.clash {
+  top: 425px;
+  position: absolute;
+}
+.clash img {
+  transform: rotate(180deg);
+  width: 247px;
+}
+.profile-traits {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 23px;
+}
+.profile-traits img {
+  width: 37px;
+}
+.profile-traits p {
+  font: 600 8px Inter;
+  color: #F7D3AE;
+}
+.zodiac,
+.personality,
+.birthstone,
+.chinese-zodiac {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.profile-navigations {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 35px;
+}
+.project button{
+  background: transparent;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to top, #7f7854, #7f7854, #F7D3AE) 1;
+  padding: 8px 27px 8px 27px;
+  font: 700 11px Inter;
+  color: #F7D3AE;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.project button:hover {
+  background-color: #000000;
+}
+.project button:active {
+  opacity: 0.6;
+}
+.resume button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  background: linear-gradient(to top, #695732, #000000);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to top, #7f7854, #7f7854, #F7D3AE) 1;
+  padding: 8px 5px 8px 12px;
+  font: 700 11px Inter;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.resume button:hover {
+  opacity: 0.8;
+}
+.resume button:active {
+  opacity: 0.6;
+}
+.resume img {
+  width: 20px;
+}
+/* CONTENTS */
+.contents {
+  height: 100vh;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px 0px 60px;
+}
+.description {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading h1 {
+  color: #F7D3AE;
+  font: 800 43px Inter;
+}
+.sub-heading h4 {
+  color: beige;
+  font: 700 19px Inter;
+}
+.texts p {
+  color: beige;
+  font: 500 16px Inter;
+}
+.skills {
+  height: 50%;
+  width: 100%;
+}
+.skill-sign {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #2D2D2D;
+}
+.skill-sign p {
+  color: #F7D3AE;
+  font: 500 9px Inter;
+}
+.skill-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  margin-top: 29px;
+}
+.skill-line {
+  height: 100px;
+  width: 2px;
+  background-color: #2D2D2D;
+}
+.skill {
+  height: 125px;
+  width: 125px;
+  position: relative;
+  flex-shrink: 0;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+.skill:hover {
+  transform: rotateY(180deg);
+}
+.skill-front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  background: linear-gradient(#31304D, #31304D) padding-box,
+              linear-gradient(to top, #F7D3AE, #695732, #695732, #F7D3AE) border-box;
+  border-radius: 100%;
+  backface-visibility: hidden;
+}
+.skill-front img {
+  object-fit: cover;
+}
+#html img {
+  width: 82%;
+}
+#css img {
+  width: 65%;
+}
+#java img {
+  width: 75%;
+}
+#c-plus-plus img {
+  width: 72%;
+}
+#vb img {
+  width: 100%;
+}
+#computer-literate img {
+  width: 70%;
+}
+#photography-enthusiast img {
+  width: 95%;
+}
+#editing img {
+  width: 68%;
+}
+#consistency img {
+  width: 75%;
+}
+.skill-behind {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 2px solid transparent;
+  background: linear-gradient(#31304D, #31304D) padding-box,
+              linear-gradient(to top, #F7D3AE, #695732, #695732, #F7D3AE) border-box;
+  border-radius: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.skill-behind p {
+  font: 800 13px Inter;
+  color: beige;
+  text-align: center;
+}
+.media-hobbies {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+.media-sign,
+.hobbies-sign {
+  height: 20px;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #2D2D2D;
+  margin-bottom: 15px;
+}
+.media-sign p,
+.hobbies-sign p {
+  color: #F7D3AE;
+  font: 500 7px Inter;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line {
+  height: 53px;
+  width: 1px;
+  background-color: #2D2D2D;
+}
+.media-container,
+.hobby-container {
+  height: 45px;
+  width: 45px;
+  position: relative;
+}
+.media-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.hobby-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.media-behind p,
+.hobby-behind p {
+  color: #F7D3AE;
+  font: 700 8px Inter;
+}
+.hobby {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
